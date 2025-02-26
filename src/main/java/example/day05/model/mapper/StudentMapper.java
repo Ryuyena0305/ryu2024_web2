@@ -1,6 +1,8 @@
 package example.day05.model.mapper;
 
 import org.apache.ibatis.annotations.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.HashMap;
 import java.util.List;
@@ -62,4 +64,15 @@ public interface StudentMapper {
 
     @Delete("delete from student where sno = #{sno}")
     boolean delete(int sno);
+
+    @Insert("""
+            <script>
+                <foreach>
+                insert into student( name , kor , math ) values 
+                <foreach collection="list" item="student" separator=",">
+                    ( #{ student.name } , #{ student.kor } , #{ student.math } ) 
+                </foreach> 
+            </script>
+            """)
+    boolean saveAll(List<Map<String,Object>> List);
 }

@@ -62,4 +62,10 @@ public class StudentService {
         return studentMapper.findStudentScores( minKor , minMath);
     }
 
+    public boolean saveAll( List<Map<String,Object>> List){
+        System.out.println("StudentController.saveAll");
+        System.out.println("List = " + List);
+        return false;
+    }
+
 }
