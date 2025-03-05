@@ -1,0 +1,26 @@
+.boxdetail{
+    
+  
+}
+.boxbox{
+    border : 1px solid #eeeeee;  
+    margin: 5px;
+    padding: 10px;
+}
+.title{
+    font-weight: bolder;
+}
+
+.box{
+    display : flex;
+    border-radius: 1px;
+  
+    
+}
+.instockTrue{
+    color : green;
+}
+.instockFalse{
+    
+    color : red;
+}
