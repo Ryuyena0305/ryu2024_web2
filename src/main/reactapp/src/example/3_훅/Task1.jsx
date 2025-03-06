@@ -14,7 +14,7 @@ export default function Task1() {
         setText(event.target.value)
         textLength= event.target.value.length; 
        
-    }
+    }                  
 
     return (
         <>
