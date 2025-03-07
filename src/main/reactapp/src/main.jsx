@@ -50,5 +50,13 @@ const root = createRoot( document.querySelector('#root') )
 // root.render(<Task1/>)
 
 //day03 : Task2
-import Task2 from'./example/3_훅/Task2.jsx'
-root.render(<Task2/>)
+// import Task2 from'./example/3_훅/Task2.jsx'
+// root.render(<Task2/>)
+
+//day04 : 4_훅2 Example1
+// import Example1 from'./example/4_훅2/Example1.jsx'
+// root.render(<Example1/>)
+
+//day04 : 5_라우터 Example1
+import Example1 from'./example/5_라우터/Example1.jsx'
+root.render(<Example1/>)

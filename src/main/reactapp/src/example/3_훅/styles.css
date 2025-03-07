@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* 10개의 열 */
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.seat.available {
+    background-color: lightgreen;
+}
+
+.seat.reserved {
+    background-color: lightcoral;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: yellow;
+}

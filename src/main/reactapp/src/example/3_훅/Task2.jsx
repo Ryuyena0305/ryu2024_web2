@@ -14,6 +14,7 @@ const ProductCard = ({ viewindex,name, phone }) => {
 export default function Task(props) {
     const [inputName, setInputName] = useState('');
     const [inputPhone, setInputPhone] = useState('');
+    const [phoneList, setPhoneList] = useState([]);
 
     const handleChangeName = (event) => {
         setInputName(event.target.value);
@@ -25,10 +26,12 @@ export default function Task(props) {
         console.log(event2.target.value);
     };
 
-    const [phoneList, setPhoneList] = useState([]);
+  
 
     const pushFun = () => {
         setPhoneList([...phoneList, { inputName, inputPhone }]);
+        setInputName('');
+        setInputPhone('');
         console.log(phoneList);
     };
 
@@ -47,12 +50,13 @@ export default function Task(props) {
                 placeholder="연락처"
             />
             <br />
-            <button onClick={pushFun}>전화번호 등록</button>
+            <button onClick={pushFun}  >전화번호 등록</button>
             <div className="phonebox">
                 {phoneList.map((phone, index) => {
                     return <ProductCard key={index} viewindex={index} name={phone.inputName} phone={phone.inputPhone} />;
                 })}
             </div>
+           
         </>
     );
 }
