@@ -61,6 +61,14 @@ const root = createRoot( document.querySelector('#root') )
 // import Example1 from'./example/5_라우터/Example1.jsx'
 // root.render(<Example1/>)
 
-//day05 : 5_AXIOS Example1
-import Example1 from'./example/6_AXIOS/Example1.jsx'
-root.render(<Example1/>)
+//day05 : 6_AXIOS Example1
+// import Example1 from'./example/6_AXIOS/Example1.jsx'
+// root.render(<Example1/>)
+
+//day05 : 6_AXIOS Example2
+// import Example2 from'./example/6_AXIOS/Example2.jsx'
+// root.render(<Example2/>)
+
+//day05 : 6_AXIOS Task
+import Task from'./example/6_AXIOS/Task.jsx'
+root.render(<Task/>)
