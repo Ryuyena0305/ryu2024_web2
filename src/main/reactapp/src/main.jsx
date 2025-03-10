@@ -58,5 +58,9 @@ const root = createRoot( document.querySelector('#root') )
 // root.render(<Example1/>)
 
 //day04 : 5_라우터 Example1
-import Example1 from'./example/5_라우터/Example1.jsx'
+// import Example1 from'./example/5_라우터/Example1.jsx'
+// root.render(<Example1/>)
+
+//day05 : 5_AXIOS Example1
+import Example1 from'./example/6_AXIOS/Example1.jsx'
 root.render(<Example1/>)
