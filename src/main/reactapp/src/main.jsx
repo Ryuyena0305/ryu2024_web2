@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+// import App from './App.jsx'
 
 // react18
 // (!) 기본 코드 주석처리
@@ -70,5 +70,9 @@ const root = createRoot( document.querySelector('#root') )
 // root.render(<Example2/>)
 
 //day05 : 6_AXIOS Task
-import Task from'./example/6_AXIOS/Task.jsx'
-root.render(<Task/>)
+// import Task from'./example/6_AXIOS/Task.jsx'
+// root.render(<Task/>)
+
+//day06 : 7_AXIOS2 App
+import App from'./example/7_AXIOS2/App.jsx'
+root.render(<App/>)
