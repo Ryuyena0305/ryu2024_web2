@@ -1,0 +1,44 @@
+/* 전체 선택자 */
+* {
+    box-sizing: border-box; /* 각 구역의 사이즈를 테두리까지 한다. */
+    margin: 0; padding: 0; /* 기본값 여백 제거 */
+}
+li { 
+    list-style-type: none; /* 글머리 제거 */
+}
+/* 링크 마크업의 색상과 밑줄 제거 */
+a { 
+    color: black; 
+    text-decoration: none;
+}
+
+/* 전체 구역 */
+#wrap {
+    display: flex; /* 하위 요소를 가로로 배치하도록 설정 */
+    height: 100vh; /* 화면의 전체 높이를 사용하도록 설정 */
+}
+
+/* 첫 번째 자식 요소: 사이드바 영역 */
+#wrap > div:nth-child(1) {
+     /* 형제 선택자 : 선택자 > 하위선택자:nth-child(순번) */
+    /* 만약에 하위선택자가 여러개 일때 순번으로 선택한다 */
+    /* wrap 선택자 하위에는 사이드바 div 와 본문 div */
+    /* div:nth-child(1) : 사이드바 div */
+    /* div:nth-child(2) : 사이드바 div */
+    width: 200px; /* 사이드바의 고정된 너비 200px로 설정 */
+    background-color: #f8d9e1; /* 연한 핑크색으로 배경 색상 변경 */
+    padding: 20px; /* 사이드바 안의 내용에 20px 여백 추가 */
+    height: 100%; /* 사이드바가 화면의 전체 높이를 꽉 채우도록 설정 */
+}
+
+/* 두 번째 자식 요소: 본문 영역 */
+#wrap > div:nth-child(2) {
+    flex-grow: 1; /* 본문 영역이 남은 공간을 차지하도록 설정 */
+    margin: 20px; /* 본문 주변에 20px 여백 추가 */
+    height: 100%; /* 본문 영역도 화면의 전체 높이를 꽉 채우도록 설정 */
+}
+
+/* 사이드 메뉴 항목 스타일 */
+#sideMenu > li {
+    margin: 50px 20px; /* 각 메뉴 항목에 위쪽 50px, 양옆 20px 여백 추가 */
+}
