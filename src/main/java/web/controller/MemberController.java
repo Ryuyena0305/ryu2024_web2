@@ -25,7 +25,8 @@ public class MemberController {
 
     //[1] 회원가입
     @PostMapping("/signup")
-    public boolean signup(@RequestBody MemberDto memberDto){
+    //public boolean signup(@RequestBody MemberDto memberDto){//JSON @RequestBody : Content-Type : application/json
+            public boolean signUp(MemberDto memberDto){//multipart/form-data사용시 @RequestBody 생략
         System.out.println("MemberController.singnup");
         System.out.println("memberDto = " + memberDto);
         return memberService.signup(memberDto);
