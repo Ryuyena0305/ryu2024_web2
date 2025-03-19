@@ -82,5 +82,8 @@ const root = createRoot( document.querySelector('#root') )
 // root.render(<App/>)
 
 //day07 : 8_MUI
-import Example1 from'./example/8_MUI/Example1.jsx'
-root.render(<Example1/>)
+// import Example1 from'./example/8_MUI/Example1.jsx'
+// root.render(<Example1/>)
+
+import App from './components/App'
+root.render(<App />)
