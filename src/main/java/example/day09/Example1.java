@@ -1,5 +1,8 @@
 package example.day09;
 
+import lombok.Builder;
+
+@Builder
 class MemberDto{
     private String name;
     private int age;
@@ -25,5 +28,10 @@ public class Example1 {
 
         //다양한 생성자를 사용하면 복잡도 올라간다 -> Builder Pattern
         //!빌더 패턴 @Builder : 복잡한 객체 생성 과정을 단순화 해주는 디자인 패턴
+
+        MemberDto memberDto5 = MemberDto.builder().name("유재석").age(40).build();
+        MemberDto memberDto6 = MemberDto.builder().build();
+        MemberDto memberDto7 = MemberDto.builder().name("유재석").build();
+        MemberDto memberDto8 = MemberDto.builder().build();
     }
 }
