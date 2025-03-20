@@ -14,7 +14,7 @@ export default function Create( props ){
     
     const  navigate  = useNavigate();
     const onCreate = async () => {
-        const response = await axios.post('http://192.168.40.32:8080/day09/books' , bookForm )
+        const response = await axios.post('http://192.168.40.32:8080/example.day09/books' , bookForm )
         if( response.data == true ){ alert('책추천등록 성공'); navigate('/'); } 
         else{ alert('책추천등록 실패'); }
     } // f end 

@@ -65,7 +65,7 @@ export default function Signup( props ){
         if( result == true ){ 
             alert('회원가입성공'); 
             // 7. 페이지 전환
-            navigate('/member/login');// navigate("/login") : 새로고침없다  vs location.href="/login"; : 새로고침있다. 
+            navigate('/login');// navigate("/login") : 새로고침없다  vs location.href="/login"; : 새로고침있다. 
         }
         else{ alert('회원가입 실패'); }
     }

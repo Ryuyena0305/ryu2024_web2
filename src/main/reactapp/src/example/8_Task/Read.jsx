@@ -12,7 +12,7 @@ export default function Read(props) {
     
     const onGet = async () => {
      
-        const response = await axios.get(`http://192.168.40.32:8080/day09/books/byid?id=${id}`)
+        const response = await axios.get(`http://192.168.40.32:8080/example.day09/books/byid?id=${id}`)
         console.log(response.data);
         document.querySelector(".writerinput").value = response.data.writer;
         document.querySelector(".nameinput").value = response.data.name;
@@ -36,12 +36,12 @@ export default function Read(props) {
     }
     const  navigate  = useNavigate();
     const onUpdate = async () => {
-        const response = await axios.put('http://192.168.40.32:8080/day09/books' , bookForm )
+        const response = await axios.put('http://192.168.40.32:8080/example.day09/books' , bookForm )
         if( response.data == true ){ alert('책수정성공'); navigate('/'); } 
         else{ alert('책수정실패'); }
     } // f end 
     const onDelete = async () => {
-        const response = await axios.delete(`http://192.168.40.32:8080/day09/books?id=${id}`);
+        const response = await axios.delete(`http://192.168.40.32:8080/example.day09/books?id=${id}`);
 
         if( response.data == true ){ alert('책 삭제 성공'); navigate('/'); } 
         else{ alert('책삭제실패'); }
