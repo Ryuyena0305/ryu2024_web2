@@ -1,7 +1,6 @@
 package example.day11.스케줄링과제;
 
 import org.apache.ibatis.annotations.*;
-import example.day11.스케줄링과제.Product;
 
 import java.util.HashMap;
 import java.util.List;
