@@ -29,4 +29,7 @@ INSERT INTO member (mid, mpwd, mname) VALUES
         ('게이밍 키보드', 30),
         ('기계식 마우스', 8),
         ('휴대용 충전기', 15);
-
+-- ---------------------- day13 ---------------------------------- --
+INSERT INTO day13users (name, money) VALUES
+('서장훈', 500000),
+('신동엽', 300000);
