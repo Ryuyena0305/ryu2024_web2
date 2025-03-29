@@ -8,7 +8,7 @@ export default function Read(props) {
     console.log(id);
 
     const [books, setBooks] = useState();
-    const [reviews, setReviews] = useState([]);  // State for storing reviews
+    const [reviews, setReviews] = useState([]); 
     const [bookForm, setBookForm] = useState({
         writer: '',
         name: '',
