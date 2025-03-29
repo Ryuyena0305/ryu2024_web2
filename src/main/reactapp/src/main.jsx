@@ -77,13 +77,13 @@ const root = createRoot( document.querySelector('#root') )
 // import App from'./example/7_AXIOS2/App.jsx'
 // root.render(<App/>)
 
-//day06 : 8_Task App
-// import App from'./example/8_Task/App.jsx'
-// root.render(<App/>)
+// day06 : 8_Task App
+import App from'./example/8_Task/App.jsx'
+root.render(<App/>)
 
 //day07 : 8_MUI
 // import Example1 from'./example/8_MUI/Example1.jsx'
 // root.render(<Example1/>)
 
-import App from './components/App'
-root.render(<App />)
+// import App from './components/App'
+// root.render(<App />)

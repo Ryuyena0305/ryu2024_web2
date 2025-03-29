@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/day09/books")
-@CrossOrigin("http://192.168.40.32:5173")
+@CrossOrigin("http://localhost:5173")
 
 public class BookController {
 

@@ -6,7 +6,7 @@ export default function Home(props) {
         onGet();
     }, [])
     const onGet = async () => {
-        const response = await axios.get('http://192.168.40.32:8080/example.day09/books')
+        const response = await axios.get('http://localhost:8080/day09/books')
         console.log(response.data);
         setBooks(response.data);
     }
